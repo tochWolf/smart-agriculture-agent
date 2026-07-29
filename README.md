@@ -1,5 +1,3 @@
- 🌱 Smart Agriculture AI
-
 # 🌱 Smart Agriculture AI
 
 > An AI-powered smart farming platform that combines Machine Learning, Computer Vision, Generative AI, RAG, and real-time weather intelligence to help farmers make smarter decisions.
@@ -72,14 +70,19 @@ The Computer Vision model analyses the image and predicts the possible plant dis
 - Computer Vision
 - Image Classification
 
+### Workflow
 
-      
-
-
-
-
-
-
-
-
+```text
+Plant Image
+     ↓
+Image Preprocessing
+     ↓
+MobileNetV2
+     ↓
+Feature Extraction
+     ↓
+Classification
+     ↓
+Disease Prediction
+     ↓
 Confidence Score
