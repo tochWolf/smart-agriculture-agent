@@ -72,34 +72,8 @@ The Computer Vision model analyses the image and predicts the possible plant dis
 - Computer Vision
 - Image Classification
 
-### Workflow
 
-                FARMER
-                   │
-                   ▼
-          ┌─────────────────┐
-          │  AI AGRI AGENT  │
-          └────────┬────────┘
-                   │
-        ┌──────────┼───────────┐
-        ▼          ▼           ▼
-   Crop Agent  Disease Agent  Weather Agent
-        │          │           │
-        ▼          ▼           ▼
-    Soil Data   Leaf Image   Weather API
-        │          │           │
-        └──────────┼───────────┘
-                   ▼
-            Recommendation
-                   │
-                   ▼
-          RAG Knowledge Base
-                   │
-                   ▼
-         Farmer-Friendly Answer
-
-
-
+      
 
 
 
