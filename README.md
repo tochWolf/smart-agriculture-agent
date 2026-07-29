@@ -1,107 +1,111 @@
  🌱 Smart Agriculture AI
 
-A VS Code-ready AI/ML agriculture platform with crop recommendation, plant disease detection, weather intelligence, RAG-based agricultural knowledge retrieval, and an AI assistant.
+# 🌱 Smart Agriculture AI
 
-## Features
+> An AI-powered smart farming platform that combines Machine Learning, Computer Vision, Generative AI, RAG, and real-time weather intelligence to help farmers make smarter decisions.
 
-- Crop recommendation using Random Forest
-- Plant disease detection using MobileNetV2 transfer learning
-- RAG-style agriculture knowledge retrieval
-- Gemini-powered agriculture assistant
-- OpenWeather integration
-- React + Vite frontend
-- FastAPI backend
-- Docker Compose setup
+![Smart Agriculture AI](https://img.shields.io/badge/AI-Smart%20Agriculture-10B981?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-orange?style=for-the-badge)
+![Generative AI](https://img.shields.io/badge/Generative%20AI-Gemini-purple?style=for-the-badge)
 
-## Requirements
+---
 
-- Python 3.11 recommended
-- Node.js 20+
-- VS Code
-- Optional Gemini API key
-- Optional OpenWeather API key
+## 🚀 Overview
 
-## Setup
+**Smart Agriculture AI** is an intelligent agriculture assistant designed to help farmers and agricultural professionals make data-driven decisions.
 
-### Backend
+The platform integrates multiple AI technologies into a single application:
 
-```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-copy .env.example .env
-uvicorn app.main:app --reload
-```
+- 🌱 AI-based Crop Recommendation
+- 🍃 Plant Disease Detection using Computer Vision
+- 🤖 Generative AI Agriculture Assistant
+- 📚 RAG-based Agriculture Knowledge System
+- 🌦️ Real-Time Weather Intelligence
+- 💧 Smart Irrigation Recommendations
+- 📊 Soil and Crop Analysis
+- 🎨 Modern Futuristic Web Interface
 
-Backend: http://localhost:8000
-Swagger: http://localhost:8000/docs
+The goal is to provide practical, accessible, and intelligent farming insights through a unified AI platform.
 
-### Frontend
+---
 
-Open another terminal:
+# ✨ Key Features
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+## 🌱 1. AI Crop Recommendation
 
-Frontend: http://localhost:5173
+The system recommends suitable crops based on soil and environmental parameters.
 
-## Crop Model
+### Input Parameters
 
-Replace `backend/data/crop_recommendation.csv` with a complete multi-class crop recommendation dataset containing:
+- Nitrogen (N)
+- Phosphorus (P)
+- Potassium (K)
+- Temperature
+- Humidity
+- Soil pH
+- Rainfall
 
-`N,P,K,temperature,humidity,ph,rainfall,label`
+### Machine Learning Model
 
-Then run:
+The project uses a:
 
-```bash
-cd backend
-python scripts/train_crop_model.py
-```
+**Random Forest Classifier**
 
-## Disease Model
+The model analyses environmental and soil parameters to recommend the most suitable crop.
 
-Place a labelled image dataset at:
+---
 
-```text
-backend/data/plant_disease/
-  Class_A/
-  Class_B/
-  Class_C/
-```
+## 🍃 2. Plant Disease Detection
 
-Then run:
+Farmers can upload an image of a plant leaf.
 
-```bash
-cd backend
-python scripts/train_disease_model.py
-```
+The Computer Vision model analyses the image and predicts the possible plant disease.
 
-The trained model and classes are saved under `backend/models/`.
+### Technology
 
-## Environment Variables
+- TensorFlow
+- MobileNetV2
+- Transfer Learning
+- Computer Vision
+- Image Classification
 
-Copy `.env.example` to `.env` and configure:
+### Workflow
 
-- `GEMINI_API_KEY`
-- `WEATHER_API_KEY`
-- `FRONTEND_URL`
+                FARMER
+                   │
+                   ▼
+          ┌─────────────────┐
+          │  AI AGRI AGENT  │
+          └────────┬────────┘
+                   │
+        ┌──────────┼───────────┐
+        ▼          ▼           ▼
+   Crop Agent  Disease Agent  Weather Agent
+        │          │           │
+        ▼          ▼           ▼
+    Soil Data   Leaf Image   Weather API
+        │          │           │
+        └──────────┼───────────┘
+                   ▼
+            Recommendation
+                   │
+                   ▼
+          RAG Knowledge Base
+                   │
+                   ▼
+         Farmer-Friendly Answer
 
-Without API keys, the core application still runs, but live weather and Gemini responses are unavailable.
 
-## Docker
 
-Create `backend/.env`, then run from the project root:
 
-```bash
-docker compose up --build
-```
 
-## Notes
 
-The included crop CSV is intentionally tiny and is only a smoke-test example. It is not sufficient to train a reliable crop recommendation model. Replace it with a complete, properly licensed dataset before training.
 
-Disease predictions are probabilistic and should not be treated as definitive agricultural diagnosis.
+
+
+
+
+Confidence Score
