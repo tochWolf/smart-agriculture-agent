@@ -1,0 +1,23 @@
+Crop Health:
+Healthy crops require balanced soil nutrients, suitable temperature, sufficient water, and appropriate sunlight. Farmers should regularly inspect leaves and stems for discoloration, spots, wilting, or abnormal growth.
+
+Irrigation:
+Irrigation requirements depend on crop type, soil moisture, temperature, humidity, rainfall, and growth stage. Irrigation should be adjusted after rainfall and should avoid excessive watering.
+
+Soil:
+Soil testing is recommended before applying fertilizers. Nitrogen supports leaf growth, phosphorus supports root and flower development, and potassium contributes to overall plant health and stress tolerance.
+
+Plant Disease:
+Plant disease identification from images is probabilistic. Symptoms can overlap between diseases, pests, and environmental stress. Farmers should verify uncertain diagnoses with agricultural experts.
+
+Rice:
+Rice generally performs well in warm conditions and requires adequate water availability. Soil and climate conditions should be evaluated before cultivation.
+
+Wheat:
+Wheat generally grows best in cooler growing conditions and requires appropriate soil fertility and water management.
+
+Tomato:
+Tomato plants can be affected by fungal, bacterial, and viral diseases. Good air circulation, appropriate watering, and removal of severely affected plant material can help reduce disease pressure.
+
+Pest Management:
+Integrated Pest Management combines monitoring, cultural practices, biological control, and targeted interventions. Pesticides should be used responsibly and according to approved product labels and local regulations.
